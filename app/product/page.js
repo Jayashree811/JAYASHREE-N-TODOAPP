@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Product() {
   const [products, setProducts] = useState([
@@ -65,7 +66,7 @@ export default function Product() {
               e.currentTarget.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.08)";
             }}
           >
-            <img src={p.image} alt={p.name} style={{ width: "100%", height: "180px", objectFit: "cover", borderRadius: "8px", marginBottom: "15px" }} />
+            <Image src={p.image} alt={p.name} width={250} height={180} style={{ width: "100%", height: "180px", objectFit: "cover", borderRadius: "8px", marginBottom: "15px" }} />
             <h4 style={{ color: "#1a73e8", fontSize: "1.2rem", marginBottom: "10px" }}>{p.name}</h4>
             <p style={{ fontWeight: "500", marginBottom: "15px" }}>🛒 Quantity: {p.countArr.length}</p>
             <div style={{ display: "flex", justifyContent: "center", gap: "10px" }}>

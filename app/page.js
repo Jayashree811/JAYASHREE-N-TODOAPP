@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 function Home() {
   return (
@@ -46,9 +47,11 @@ function Home() {
         }}
       >
         {/* Moderate-sized Image */}
-        <img
+        <Image
           src="https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="Electronics Banner"
+          width={500}
+          height={300}
           style={{
             width: "100%",
             maxWidth: "500px", // moderate size

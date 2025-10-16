@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function About() {
   return (
@@ -41,16 +42,18 @@ function About() {
           <div style={{ flex: "1 1 400px" }}>
             <h2 style={{ color: "#1a73e8", marginBottom: "15px" }}>Our Story</h2>
             <p style={{ color: "#4a4a4a", lineHeight: "1.6", marginBottom: "15px" }}>
-              Founded in 2010, Jayashree Electronics has grown from a small local store to one of the region's most trusted electronics retailers. We pride ourselves on offering the latest technology, competitive prices, and exceptional customer service.
+              Founded in 2010, Jayashree Electronics has grown from a small local store to one of the region&apos;s most trusted electronics retailers. We pride ourselves on offering the latest technology, competitive prices, and exceptional customer service.
             </p>
             <p style={{ color: "#4a4a4a", lineHeight: "1.6" }}>
               Our mission is to make cutting-edge technology accessible to everyone while providing an unmatched shopping experience both online and in our stores.
             </p>
           </div>
           <div style={{ flex: "1 1 400px", textAlign: "center" }}>
-            <img
+            <Image
               src="https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Electronics Store"
+              width={500}
+              height={300}
               style={{ 
                 width: "100%", 
                 maxWidth: "500px", 
